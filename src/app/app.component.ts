@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crypto_currency_coin_tracker';
+ selectedCurrency : string = "USD";
+ constructor(){
+
+ }
+ sendCurrency(event:string){
+  console.log(event);
+ }
 }
